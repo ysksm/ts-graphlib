@@ -1,0 +1,43 @@
+{
+  "name": "ts-graphlib",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".dist/index.cjs",
+  "module": ".dist/index.js",
+  "types": ".dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./cli": {
+      "import": "./dist/cli.js",
+      "require": "./dist/cli.cjs"
+    }
+  },
+  "bin": {
+    "awesome-add": "./dist/cli.js"  
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build", 
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysksm/ts-graphlib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ysksm/ts-graphlib/issues"
+  },
+  "homepage": "https://github.com/ysksm/ts-graphlib#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.12",
+    "typescript": "^5.8.3"
+  }
+}

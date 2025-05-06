@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "esnext",
+    "declaration": true,
+    "outDir": "dist",
+    "moduleResolution": "bundler",          /* Node16 でも可 */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src"]
+}
